@@ -1,5 +1,20 @@
-.columns {
-    position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    float: left; }
+@media screen and (min-width:600px) {
+    .sidebar {
+        width:180px;
+        margin-left:20px;
+        float:right;
+    }
+    #content {
+        margin-right:200px;
+    }
+}
+@media screen and (min-width:910px) {
+    body {
+        width: 900px
+    }
+}
+@media screen and (max-width:799px) {
+    .sidebar li {
+        display:inline              
+    }
+}
