@@ -2,16 +2,15 @@
 {% block content %}
 <section id="content">
   {% block content_title %}
-<h2>All articles</h2>
 {% endblock %}
 {# show summaries of the latest articles #}
 {% if articles %}
 {% for article in (articles_page.object_list if articles_page else articles) %}
 <article>
 	<header><h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3></header>
-	<footer><h6>Written by <a href="{{ SITEURL }}/author/{{ article.author|lower|replace(' ', '-') }}.html">{{ article.author }}</a> {% if article.category %}in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category}}</a> {% endif %}on {{ article.locale_date }}.{% if article.tags|count > 0 %} Tags: {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>, {% endfor %}{% endif %}</h6></footer>
+	<footer class="title_info"><a href="{{ SITEURL }}/author/{{ article.author|lower|replace(' ', '-') }}.html">{{ article.author }}</a> {% if article.category %} <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category}}</a> {% endif %} {{ article.locale_date }}.{% if article.tags|count > 0 %} {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>, {% endfor %}{% endif %}</footer>
         <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
-        <p class="continue"><a href="{{ SITEURL }}/{{ article.url }}">Continue reading &raquo;</a></p>
+        <p class="continue"><a href="{{ SITEURL }}/{{ article.url }}">继续 &raquo;</a></p>
 </article>
 <hr />
 {% endfor %}
