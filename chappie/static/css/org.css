@@ -651,9 +651,9 @@ body {
     margin: 2% auto;
     font-size: 14px;
     line-height: 1.4em;
-    font-weight: lighter;
+    font-weight: 300;
     font-family: "Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",FontAwesome,sans-serif !important;
-    color: #565656
+    color: #333
 }
 @media screen and (min-width:600px) {
     body {
@@ -869,6 +869,9 @@ kbd {
 }
 #table-of-contents li {
     clear: both
+}
+#text-table-of-contents {
+    display:inline-block
 }
 .tag {
     font-family: Lucida Console, monospace;
