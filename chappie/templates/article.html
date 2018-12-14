@@ -1,14 +1,11 @@
 {% extends "base.html" %}
 {% block html_lang %}{{ article.lang }}{% endblock %}
 
-{% block title %}{{ SITENAME }} - {{ article.title }}{% endblock %}
+{% block title %}{{ SITENAME }}-{{ article.title }}{% endblock %}
 
 {% block head %}
-  {{ super() }}
-  {% if article.description %}
-    <meta name="description" content="{{article.description}}" />
-  {% endif %}
-
+{{ super() }}
+<meta name="description" content="{{article.summary}}" />
   {% for tag in article.tags %}
     <meta name="tags" content="{{tag}}" />
   {% endfor %}
