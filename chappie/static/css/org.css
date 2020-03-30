@@ -659,12 +659,12 @@ body {
 ::selection {
     background: #d6edff
 }
-dl,
-ol,
-p,
-ul {
-    margin: 0 auto
-}
+/* dl, */
+/* ol, */
+/* p, */
+/* ul { */
+/*     margin: 0 auto */
+/* } */
 .title {
     margin: .8em auto;
     color: #000
