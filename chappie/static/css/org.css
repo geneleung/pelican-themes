@@ -5,7 +5,7 @@ html {
     -webkit-text-size-adjust: 100%
 }
 body {
-    margin: 0
+    margin: 0;
 }
 article,
 aside,
@@ -647,23 +647,11 @@ textarea {
     font-weight: 700
 }
 body {
-    width: 95%;
-    margin: 2% auto;
-    font-size: 14px;
-    line-height: 1.4em;
-    font-weight: 300;
-    font-family: "Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",FontAwesome,sans-serif !important;
-    color: #333
-}
-@media screen and (min-width:600px) {
-    body {
-        font-size: 18px
-    }
-}
-@media screen and (min-width:910px) {
-    body {
-        width: 900px
-    }
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: "PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",FontAwesome,sans-serif !important;
+    color: #575757;
+    line-height:1.6
 }
 ::-moz-selection {
     background: #d6edff
