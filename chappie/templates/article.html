@@ -5,7 +5,6 @@
 
 {% block head %}
 {{ super() }}
-<meta name="description" content="{{article.summary}}" />
   {% for tag in article.tags %}
     <meta name="tags" content="{{tag}}" />
   {% endfor %}
