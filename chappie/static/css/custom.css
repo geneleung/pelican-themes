@@ -115,9 +115,9 @@ body{
 }
 
 /* for article.html*/
-p {
-    text-indent:2em
-}
+/* p { */
+/*     text-indent:2em */
+/* } */
 .entry-title{
     text-align:center;
 }
